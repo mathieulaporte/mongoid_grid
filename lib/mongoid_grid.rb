@@ -25,7 +25,7 @@ module Mongoid
         #
         # Only the _id is really needed, the others are helpful cached
         # so you don't need to hit GridFS
-        field "#{name}_id".to_sym,   :type => BSON::ObjectId
+        field "#{name}_id".to_sym,   :type => Moped::BSON::ObjectId
         field "#{name}_name".to_sym, :type => String
         field "#{name}_size".to_sym, :type => Integer
         field "#{name}_type".to_sym, :type => String
